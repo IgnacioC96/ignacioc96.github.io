@@ -1,0 +1,1075 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    font-family:'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+/*css header */
+
+.header{
+    background-color:rgba(0, 0, 0, 0.85);
+    position: fixed;
+    width: 100%;
+    transition: 0.7s;
+    border-bottom-style: solid;
+    border-bottom-color:rgb(255, 255, 255,0.3) ;
+    border-bottom-width: 1px;
+    height: 80px;
+    top: 0;
+    left: 0;
+}
+
+.abajo{
+    background-color:rgba(255, 255, 255, 0.95);
+    height: 60px;
+    border-bottom-style: none;
+    position: fixed;
+    z-index: 2;
+}
+
+.abajo .nav-link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.abajo .nav-menu-item{
+    line-height: 60px;
+    font-size: 16px;
+}
+
+.abajo .nav-link:hover{
+    color:#ffffff;
+    transition: .5s;
+    background-color: rgba(101, 100, 100, 0.7);
+}
+
+.nav{
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right:40px;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    font-weight: bold;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(218, 215, 215);
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-link:hover{
+    color:#2acbd2;
+    transition: .5s;
+    background-color: rgba(121, 119, 119, 0.7);
+}
+
+.nav-toggle{
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+/* css seccion sobre mi */
+
+#sobre_mi{
+    display: flex;
+    
+    background-image: url(https://www.unitedsportsusa.com/wp-content/uploads/studjo-yavor-miastko-74158.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre_mi .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 500px;
+    border-top: 2px solid #2acbd2;
+    border-bottom: 2px solid #2acbd2;
+}
+
+.img-container{
+    display: flex;
+    border: 2px solid #2acbd2;
+    background-color: #fff;
+    
+}
+
+.img-container img{
+    opacity: 1;
+}
+
+.perfil-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 450px;
+    width: 50%;
+    margin-left: 20px;
+    border: 2px solid #2acbd2;
+    color: #fff;
+}
+
+.nombre-perfil{
+    text-align: center;
+}
+
+.nombre-perfil h2{
+    font-size: 40px;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+}
+
+.nombre-perfil p{
+    font-size: 20px;
+    margin-top: 0;
+    padding: 5px 10px;
+}
+
+.descripcion-perfil{
+    font-size: 25px ;
+    text-align: center;
+}
+
+.descripcion-perfil ul{
+    padding: 0;
+}
+
+.elementos-lista-inicio{
+    margin: 15px 0;
+    list-style-type: none;
+    background-color:rgba(87, 86, 86, 0.25);
+    padding: 0px 10px;
+}
+
+/* css formacion academica*/
+
+#formacion-academica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagenes/pista-de-atletismo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#formacion-academica .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 630px;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-top: 3px solid #2acbd2 ;
+    border-bottom: 3px solid #2acbd2 ;
+}
+
+.items-formacion-academica{
+    height: 90%;
+    width: 450px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+}
+
+#itemb1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contenedor-titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 20px 20px;
+}
+
+.contenidob1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulob1{
+    background-color: rgba(36, 36, 36, 0.35);
+    color: white;
+}
+
+#itemb2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulob2{
+    background-color: rgba(36, 36, 36, 0.35);
+    color: white;
+}
+
+.contenidob2{
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+
+}
+
+#itemb2 p{
+    font-size: 1.35em;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+
+/* css de experiencia laboral*/
+
+#experiencia-laboral{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: end;
+    background-image: url(imagenes/videoanalisisblancoynegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#experiencia-laboral .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 860px;
+    width: 95%;
+}
+
+.bloques-contenedores{
+    display: flex;
+    flex-direction: row;
+}
+
+.bloques-contenedores .paneles h3{
+    text-align: center;
+}
+
+#bloque-top{
+    justify-content: space-evenly;
+}
+
+#bloque-bottom{
+    justify-content: center;
+}
+
+.paneles{
+    display: flex;
+    flex-direction: column;
+    position:relative;      
+    -webkit-box-shadow:0 0px 4px rgb(0, 0, 0), 0 0 20px #CCC inset;
+    -moz-box-shadow:0 0px 4px rgb(0, 0, 0), 0 0 20px #CCC inset;
+    box-shadow:0 0px 4px rgb(0, 0, 0), 0 0 20px #CCC inset;
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+#bloque-top .paneles{
+    height: 430px;
+    width: 400px;
+    text-align: center;
+}
+
+#bloque-top .paneles ul li{
+    text-align: left;
+}
+
+#bloque-top .paneles h4{
+    margin-top: auto;
+}
+
+#bloque-bottom .paneles{
+    height: 350px;
+    width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    text-align: center;
+}
+
+#bloque-top .paneles h3{
+    color: #ffffff;
+    margin-bottom: 0;
+    background-color:rgba(36, 36, 36, 0.6) ;
+    padding: 10px 0px;
+    margin-top: 0;
+}
+
+#bloque-top .paneles p{
+    margin-top: 1px;
+}
+
+#bloque-top .paneles ul{
+    padding: 10px 25px;
+}
+
+#bloque-bottom .paneles h3{
+    color: #ffffff;
+    margin-bottom: 0;
+    background-color:rgba(36, 36, 36, 0.6) ;
+    padding: 10px 0px;
+    margin-top: 0;
+}
+
+#bloque-bottom .paneles p{
+    margin-top: 5px;
+    flex-grow: 1;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+/* css de contactame */
+
+#contactame{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image:url(https://images.alphacoders.com/510/thumb-1920-510026.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactame .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 0;
+    opacity: 0.88;
+    border-bottom: #2acbd2 solid;
+    border-top: #2acbd2 solid;
+}
+
+.titulo-contactame{
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 0;
+    
+}
+
+.titulo-contactame h2{
+    font-size: 3em;
+    text-decoration: underline;
+    text-decoration-color: #2acbd2;
+}
+
+.contenedor-bloques1y2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 15%;
+    
+}
+
+#bloque1{
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    width:100% ;
+    align-items: center;
+    text-align: center;
+}
+
+.lista-direccion{
+    list-style-type: none;
+}
+
+.lista-contacto{
+    list-style-type: none;
+}
+
+.lista-contacto a{
+    text-decoration: none;
+    color: #2acbd2;
+    font-weight: bold;
+}
+
+.lista-contacto a:hover{
+    text-decoration: underline;
+
+}
+
+#bloque2{
+    display: flex;
+    flex-direction: column;
+    width:100% ;
+}
+
+.nombre-telefono{
+    display: flex;
+    flex-direction: row;
+}
+
+#nombre-form{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+#telefono-form{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.form_input{
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.10rem;
+    font-size: 1rem;
+    border-color: #d4d7e5;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: 0.7s;
+}
+
+
+.form_input:focus{
+    border-color: #2acbd2;
+    outline: none;
+}
+
+.divs-form{
+    margin-bottom: 15px;
+    transition: 0.7s;
+}
+
+.form_text{
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1.10rem;
+    font-size: 1rem;
+    border-color: #d4d7e5;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    font: inherit;
+    resize: none;
+    transition: 0.7s;
+}
+
+.form_text:focus{
+    border-color: #2acbd2;
+    outline: none;
+}
+
+#enviar{
+    width: 100%;
+    height: 50px;
+    background-color: #2acbd2;
+    color: white;
+    border: none;
+    font-size:large;
+    font-weight: bold;   
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#enviar:hover{
+    background: #2b9297;
+}
+
+/* css footer */
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+.footer-container{
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-container p{
+    color: rgb(100, 100, 100);
+}
+
+/* css divisores de secciones */
+
+.divisor-seccion{
+    text-align: center;
+    background-color:rgba(199, 197, 197,0.5);
+    margin: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 300px;
+}   
+
+.divisor-seccion h3{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+}
+
+.bibliografia{
+    display: flex;
+    flex-direction: column;
+}
+
+.moreInfo{
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.show p{
+    padding-left: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1245px) {
+
+    .header{
+        height: 6vh;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+    .nav-menu-item{
+        font-size: 16px;
+        line-height: 60px;
+    }
+
+    #sobre_mi .container .img-container{
+        height: 300px;
+        width: 200px;
+    }
+
+    .perfil-container{
+        height: 300px;
+        width: 500px;
+    }
+
+    .perfil-container h2{
+        margin: 0;
+        font-size: 25px;
+        padding: 2px 2px;
+    }
+
+    .perfil-container p{
+        margin: 0;
+    }
+
+    .descripcion-perfil{
+        font-size: 17px;
+    }
+
+    .divisor-seccion{
+        height: 200px;
+    }
+
+    .divisor-seccion h3{
+        font-size: 2.5em;
+    }
+
+    #formacion-academica .container{
+        height: 500px;
+    }
+
+    .items-formacion-academica{
+        width: 350px;
+    }
+
+    .titulob1{
+        font-size: 0.85em;
+    }
+
+    .contenedor-titulos{
+        font-size: 0.85em;
+    }
+
+    .titulob2{
+        font-size: 0.85em;
+    }
+
+    .contenidob2{
+        font-size: 0.78em;
+    }
+
+    #experiencia-laboral{
+        align-items: center;
+    }
+
+
+    #experiencia-laboral .container{
+        height: 800px;
+    }
+
+    #bloque-top{
+        height: 65%;
+    }
+
+    #bloque-top .paneles{
+        height: 95%;
+        width:230px ;
+        font-size: 0.85em;
+    }
+
+    #bloque-bottom{
+        height: 35%;
+    }
+
+    #bloque-bottom .paneles{
+        height: 93%;
+        width: 250px;
+        font-size: 0.75em;
+        margin: 0px 5px;
+    }
+    
+    #bloque-bottom .paneles p{
+        padding: 10px 1px;
+    }
+
+    .contenedor-bloques1y2{
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    #bloque2{
+        padding-right: 5px;
+    }
+
+    .footer-container p{
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+    .header{
+        height: 60px;
+    }
+
+    .nav{
+        justify-content: center;
+    }
+
+    .nav-menu-item{
+        font-size: 12px;
+        line-height: 60px;
+    }
+
+    .abajo{
+        height: 60px;
+    }
+
+    .abajo .nav{
+        justify-content: center;
+    }
+
+    .abajo .nav-menu-item{
+        font-size: 12px;
+        line-height: 60px;
+    }
+
+    #sobre_mi .container .img-container{
+        height: 300px;
+        width: 200px;
+    }
+
+    .perfil-container{
+        height: 300px;
+        width: 340px;
+        margin-left: 10px;
+    }
+
+    .perfil-container h2{
+        margin: 0;
+        font-size: 25px;
+        padding: 2px 2px;
+    }
+
+    .perfil-container p{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .descripcion-perfil{
+        font-size: 16px;
+    }
+
+    .divisor-seccion{
+        height:150px ;
+    }
+
+    .divisor-seccion h3{
+        font-size: 2em;
+    }
+
+    #formacion-academica .container{
+        height: 500px;
+    }
+
+    .items-formacion-academica{
+        width: 280px;
+    }
+
+    .titulob1{
+        font-size: 0.85em;
+    }
+
+    .contenedor-titulos{
+        font-size: 0.74em;
+    }
+
+    .titulob2{
+        font-size: 0.85em;
+    }
+
+    .contenidob2{
+        font-size: 0.7em;
+    }
+
+    #experiencia-laboral{
+        align-items: center;
+    }
+
+
+    #experiencia-laboral .container{
+        height: 800px;
+    }
+
+    #bloque-top{
+        height: 65%;
+    }
+
+    #bloque-top .paneles{
+        height: 95%;
+        width:177px ;
+        font-size: 0.7em;
+    }
+
+    #bloque-bottom{
+        height: 35%;
+    }
+
+    #bloque-bottom .paneles{
+        height: 93%;
+        width: 168px;
+        font-size: 0.624em;
+        margin: 0px 5px;
+    }
+    
+    #bloque-bottom .paneles p{
+        padding: 10px 1px;
+    }
+
+    .contenedor-bloques1y2{
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    #bloque2{
+        padding-right: 5px;
+    }
+
+    #bloque1{
+        padding-right: 10px;
+    }
+
+    .footer-container p{
+        text-align: center;
+    }
+} 
+
+@media only screen and (max-width: 575px){
+
+    .header{
+        height: 60px;
+        background-color: black;
+    }
+    
+    .abajo{
+        background-color:rgba(0, 0, 0, 1 );
+    }
+
+    .abajo .nav-menu-item{
+        font-size: 18px;
+    }
+
+    .abajo .nav-link{
+        color: black;
+    }
+ 
+    .nav-menu{
+       flex-direction: column;
+       align-items: center;
+       margin: 0;
+       background-color: #f49a3a;
+       position: fixed;
+       top: 60px;
+       width: 100%;
+       padding: 20px 0;
+       height: max-content;
+       overflow-y: auto;
+       left: 0;
+       transition: left 0.3s;
+       border: 1px solid black;
+    }
+
+    .nav-menu-item{
+        line-height: 70px;
+        margin: 15px 15px;
+    }
+
+    .nav-link{
+        color: black;
+    }
+    
+    .nav-link:hover{
+        background: none;
+        color: #2acbd2;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 100%;
+    }
+
+    #sobre_mi{
+        align-items: end;
+        background: rgb(212, 175, 55)
+    }
+
+    #sobre_mi .container{
+        flex-direction: column;
+        height: max-content;
+        margin-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.95);
+        border: none;
+    }
+
+    .img-container{
+        height: 300px;
+        width: 200px;
+        margin-top: 10px;
+        border-color:#98a3a4;
+    }
+
+    .perfil-container{
+        margin: 0;
+        border: none;
+        width: 100%;
+        height: max-content;
+    }
+
+    .perfil-container h2{
+        margin: 0;
+        font-size: 30px;
+        padding: 5px 5px;
+    }
+
+    .perfil-container p{
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .descripcion-perfil{
+        font-size: 19px;
+    }
+
+    .divisor-seccion{
+        height: 100px;
+        margin: 0;
+        background-color: rgb(0, 0, 0);
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .divisor-seccion h3{
+        font-size: 1.85em;
+        margin: 0;
+        padding: 0 5px;
+        color: rgb(212, 175, 55);
+    }
+
+    #formacion-academica{
+        height: 200vh;
+        background: rgb(212, 175, 55);
+    }
+
+    #formacion-academica .container{
+        flex-direction: column;
+        height: 90%;
+        background-color: rgb(0, 0, 0);
+        border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+    }
+
+    .items-formacion-academica{
+        width: 100%;
+        height: max-content;
+    }
+
+    .titulob1{
+        background-color: rgb(212, 175, 55);
+        color: black;
+    }
+
+    .contenedor-titulos{
+        color: black;
+        background: wheat;
+    }
+
+    .titulob2 {
+        background-color: rgb(212, 175, 55);
+        color: black;
+    }
+
+    .contenidob2{
+        background: wheat;
+    }
+
+    #experiencia-laboral{
+        height: max-content;
+        background: #d4af37;
+    }
+
+    #experiencia-laboral .container{
+        height: max-content;
+        width: 100%;
+    }
+
+    .bloques-contenedores{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    #bloque-top .paneles{
+        width: 100%;
+        height: max-content;
+        background: wheat;
+    }
+
+    #bloque-top .paneles h3{
+        color: #fff;
+        background-color: rgba(0,0,0,0.84);
+    }
+
+    #bloque-bottom .paneles{
+        width: 100%;
+        margin: 0;
+        height: max-content;
+        background-color: wheat;
+    }
+
+    #bloque-bottom .paneles h3{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.88);
+    }
+
+    #contactame{
+        background: #d4af37;
+    }
+
+    #contactame .container{
+        padding: 0;
+        margin: 40px 0px 0px 0px;
+        background-color: #fff;
+        border-bottom: #000 solid;
+        border-top: #000 solid;
+        opacity: 1;
+    }
+
+    .titulo-contactame h2{
+        margin: 0;
+        text-decoration-color: #d4af37;
+    }
+
+    .lista-contacto a{
+        color: #d4af37;
+    }
+
+    .contenedor-bloques1y2{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #bloque2{
+        padding: 10px;
+    }
+
+    #enviar{
+        color: #fff;
+        background: #000;
+    }
+
+    .footer-container p{
+        text-align: center;
+    }
+}   
+
